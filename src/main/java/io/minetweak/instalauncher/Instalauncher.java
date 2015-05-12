@@ -13,7 +13,7 @@ import java.net.URL;
 public class Instalauncher {
 
     private static final String LW_URL = "http://goo.gl/Rpx6p6";
-    private static final String MT_URL = "https://goo.gl/19Lgqu";
+    private static final String MT_URL = "https://goo.gl/Yzf7cs";
 
     public static void main(String[] args) {
         File launchwrapper = new File("launchwrapper.jar");
