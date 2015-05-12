@@ -12,9 +12,9 @@ import java.net.URL;
  */
 public class Instalauncher {
 
-    private static final String MC_URL = "https://goo.gl/OEdbtm";
-    private static final String LW_URL = "http://goo.gl/Rpx6p6";
-    private static final String MT_URL = "https://goo.gl/Yzf7cs";
+    private static final String MC_URL = "https://s3.amazonaws.com/Minecraft.Download/versions/1.8.4/minecraft_server.1.8.4.jar";
+    private static final String LW_URL = "http://nexus.directcode.org/nexus/service/local/repositories/snapshots/content/io/minetweak/launchwrapper/1.0-SNAPSHOT/launchwrapper-1.0-20150512.025255-1.jar";
+    private static final String MT_URL = "https://ci.directcode.org/guestAuth/repository/download/Minetweak_Minetweak/.lastSuccessful/mtrelease.zip";
 
     public static void main(String[] args) {
         File minecraft_server = new File("minecraft_server.1.8.jar");
