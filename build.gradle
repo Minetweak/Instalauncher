@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+version = '1.0-SNAPSHOT'
+group = 'io.minetweak'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'net.lingala.zip4j:zip4j:1.3.2'
+    compile 'commons-io:commons-io:2.4'
+}
+
