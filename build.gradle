@@ -12,3 +12,8 @@ dependencies {
     compile 'commons-io:commons-io:2.4'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'io.minetweak.instalauncher.Instalauncher'
+    }
+}
