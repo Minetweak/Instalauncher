@@ -12,12 +12,23 @@ import java.net.URL;
  */
 public class Instalauncher {
 
+    private static final String MC_URL = "https://goo.gl/OEdbtm";
     private static final String LW_URL = "http://goo.gl/Rpx6p6";
     private static final String MT_URL = "https://goo.gl/Yzf7cs";
 
     public static void main(String[] args) {
+        File minecraft_server = new File("minecraft_server.1.8.jar");
         File launchwrapper = new File("launchwrapper.jar");
         File mtrelease = new File("mtrelease.zip");
+
+        if (!minecraft_server.exists()) {
+            try {
+                FileUtils.copyURLToFile(new URL(MC_URL), minecraft_server);
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(0);
+            }
+        }
 
         if (!launchwrapper.exists()) {
             try {
