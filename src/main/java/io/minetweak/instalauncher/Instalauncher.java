@@ -12,12 +12,12 @@ import java.net.URL;
  */
 public class Instalauncher {
 
-    private static final String MC_URL = "https://s3.amazonaws.com/Minecraft.Download/versions/1.8.4/minecraft_server.1.8.4.jar";
-    private static final String LW_URL = "http://nexus.directcode.org/nexus/service/local/repositories/snapshots/content/io/minetweak/launchwrapper/1.0-SNAPSHOT/launchwrapper-1.0-20150512.025255-1.jar";
+    private static final String MC_URL = "https://s3.amazonaws.com/Minecraft.Download/versions/1.10/minecraft_server.1.10.jar";
+    private static final String LW_URL = "http://nexus.directcode.org/nexus/service/local/repositories/snapshots/content/io/minetweak/launchwrapper/1.1-SNAPSHOT/launchwrapper-1.1-20160724.000303-1.jar";
     private static final String MT_URL = "https://ci.directcode.org/guestAuth/repository/download/Minetweak_Minetweak/.lastSuccessful/mtrelease.zip";
 
     public static void main(String[] args) {
-        File minecraft_server = new File("minecraft_server.1.8.jar");
+        File minecraft_server = new File("minecraft_server.1.10.jar");
         File launchwrapper = new File("launchwrapper.jar");
         File mtrelease = new File("mtrelease.zip");
 
@@ -26,7 +26,7 @@ public class Instalauncher {
                 FileUtils.copyURLToFile(new URL(MC_URL), minecraft_server);
             } catch (IOException e) {
                 e.printStackTrace();
-                System.exit(0);
+                System.exit(1);
             }
         }
 
